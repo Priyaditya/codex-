@@ -59,7 +59,40 @@
 
 
     <!-- === COMMIT 2: START === -->
+ <section class="form-section">
+      <div class="container">
+        <div class="form-card">
+          <form id="contactForm">
+            <div class="form-group">
+              <label for="fullName">Your Full Name</label>
+              <input type="text" id="fullName" class="form-input" placeholder="e.g. John Doe" required>
+            </div>
 
+            <div class="form-group">
+              <label for="email">Email Address</label>
+              <input type="email" id="email" class="form-input" placeholder="e.g. john@example.com" required>
+            </div>
+
+            <div class="form-group">
+              <label for="role">Who are you?</label>
+              <select id="role" class="form-input">
+                <option value="student">Junior Student</option>
+                <option value="evaluator">Workshop Evaluator</option>
+                <option value="other">General Visitor</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label for="message">Message (<span id="charCount">0</span>/200 chars)</label>
+              <textarea id="message" class="form-input" rows="4" maxlength="200"
+                placeholder="Type your message or feedback..." required></textarea>
+            </div>
+
+            <button type="submit" class="btn btn-primary btn-block">Send Message &rarr;</button>
+          </form>
+        </div>
+      </div>
+    </section>
     <!-- === COMMIT 2: END === -->
 
 
