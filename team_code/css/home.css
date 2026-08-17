@@ -138,6 +138,48 @@
 
 
 /* COMMIT 3 START: */
+cta-section {
+  padding: 4rem 0 6rem;
+}
+
+.cta-box {
+  background: var(--gradient-glow);
+  border: 1px solid var(--border-glow);
+  border-radius: var(--radius-lg);
+  padding: 4rem 2rem;
+  text-align: center;
+  backdrop-filter: blur(12px);
+}
+
+.cta-title {
+  font-family: var(--font-heading);
+  font-size: 2.25rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+.cta-subtitle {
+  color: var(--text-muted);
+  font-size: 1.1rem;
+  margin-bottom: 2rem;
+}
+
+.cta-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+
+@media (max-width: 768px) {
+  .hero-title {
+    font-size: 2.25rem;
+  }
+
+  .hero-actions,
+  .cta-buttons {
+    flex-direction: column;
+  }
+}
 
 
 /*  COMMIT 3 END: */
