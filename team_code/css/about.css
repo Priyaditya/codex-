@@ -100,6 +100,49 @@
 
 
 /* COMMIT 3 START: */
+.values-section {
+  padding: 4rem 0 6rem;
+}
+
+.values-box {
+  background: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-lg);
+  padding: 3.5rem 2.5rem;
+  backdrop-filter: blur(12px);
+}
+
+.values-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+  margin-top: 2.5rem;
+}
+
+.value-item {
+  background: rgba(15, 23, 42, 0.6);
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-md);
+  padding: 1.5rem;
+  transition: var(--transition-fast);
+}
+
+.value-item:hover {
+  border-color: var(--border-glow);
+  transform: translateY(-3px);
+}
+
+.value-item h4 {
+  font-family: var(--font-heading);
+  color: var(--accent-purple);
+  font-size: 1.1rem;
+  margin-bottom: 0.5rem;
+}
+
+.value-item p {
+  color: var(--text-muted);
+  font-size: 0.9rem;
+}
 
 
 /*  COMMIT 3 END: */
