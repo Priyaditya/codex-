@@ -1,5 +1,7 @@
 //COMMIT 1 START: 
-
+document.addEventListener("DOMContentLoaded", () => {
+  console.log("🎨 Team Showcase script initialized!");
+});
 //COMMIT 1 END: 
 
 
