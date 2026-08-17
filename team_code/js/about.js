@@ -41,5 +41,17 @@ filterButtons.forEach(btn => {
 
 
 //COMMIT 3 START: 
+memberCards.forEach(card => {
+  card.addEventListener("mousemove", (e) => {
+    const rect = card.getBoundingClientRect();
+    const x = e.clientX - rect.left;
+    const y = e.clientY - rect.top;
+    
+    card.style.background = `radial-gradient(circle at ${x}px ${y}px, rgba(168, 85, 247, 0.18), rgba(30, 41, 59, 0.8) 70%)`;
+  });
 
+  card.addEventListener("mouseleave", () => {
+    card.style.background = "var(--bg-card)";
+  });
+});
 //COMMIT 3 END: 
