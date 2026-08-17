@@ -1,5 +1,7 @@
 //COMMIT 1 START: 
-
+document.addEventListener("DOMContentLoaded", () => {
+  console.log("📧 Contact Page JS successfully loaded!");
+});
 //COMMIT 1 END: 
 
 
