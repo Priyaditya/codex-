@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Team Hub - Team Showcase Solution</title>
+  <link rel="stylesheet" href="../Css/shared.css">
+  <link rel="stylesheet" href="../Css/about.css">
+</head>
+
+<body>
+  <!-- Shared Navigation Bar -->
+  <nav class="navbar">
+    <div class="container nav-container">
+      <a href="home.html" class="logo">
+        <span>Team Portfolio</span>
+        <span class="logo-badge">PRO</span>
+      </a>
+      <ul class="nav-links">
+        <li><a href="home.html" class="nav-link">Home</a></li>
+        <li><a href="about.html" class="nav-link active">Team Showcase</a></li>
+        <li><a href="contact.html" class="nav-link">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <main>
+    <!-- =========================================================================
+         COMMIT 1: TEAM SHOWCASE HEADER
+         -------------------------------------------------------------------------
+         Copy the HTML block below into your `about.html` file in teams/team-<name>/
+         Then commit: git commit -m "feat: add team showcase header"
+         ========================================================================= -->
+    <!-- === COMMIT 1: START === -->
+    <section class="about-hero">
+      <div class="container text-center">
+        <span class="section-tag">Meet The Minds</span>
+        <h1 class="section-title">Our Brilliant <span class="gradient-text">Developers</span></h1>
+        <p class="section-subtitle" style="margin: 0 auto;">
+          We are a team of 3 developers building modern web solutions together. Filter by domain or explore our profiles
+          below.
+        </p>
+
+        <!-- Filter Controls -->
+        <div class="filter-bar">
+          <button class="filter-btn active" data-filter="all">All Members</button>
+          <button class="filter-btn" data-filter="lead">Team Leader</button>
+          <button class="filter-btn" data-filter="dev">Developers</button>
+        </div>
+      </div>
+    </section>
+    <!-- === COMMIT 1: END === -->
+
+
+    <!-- =========================================================================
+         COMMIT 2: TEAM MEMBER CARDS
+         -------------------------------------------------------------------------
+         Copy the HTML block below into your `about.html` file in teams/team-<name>/
+         Then commit: git commit -m "feat: add team member profile cards"
+         ========================================================================= -->
+    <!-- === COMMIT 2: START === -->
+    <section class="members-section">
+      <div class="container">
+        <div class="members-grid">
+
+          <!-- Leader Card -->
+          <div class="member-card" data-category="lead">
+            <div class="member-avatar">👑</div>
+            <div class="member-info">
+              <span class="role-badge leader-badge">Team Leader</span>
+              <h3 class="member-name">Alex Rivera</h3>
+              <p class="member-title">Git Architect & Coordinator</p>
+              <p class="member-bio">Responsible for managing repository structure, initial setup, and coordinating pull
+                requests.</p>
+              <div class="tech-stack">
+                <span class="tech-pill">Git</span>
+                <span class="tech-pill">GitHub</span>
+                <span class="tech-pill">Architecture</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Member 1 Card -->
+          <div class="member-card" data-category="dev">
+            <div class="member-avatar">⚡</div>
+            <div class="member-info">
+              <span class="role-badge dev-badge">Member 1</span>
+              <h3 class="member-name">Jordan Lee</h3>
+              <p class="member-title">Frontend & Home Engineer</p>
+              <p class="member-bio">Designed and engineered the interactive home page, responsive hero sections, and
+                counter logic.</p>
+              <div class="tech-stack">
+                <span class="tech-pill">HTML5</span>
+                <span class="tech-pill">CSS Grid</span>
+                <span class="tech-pill">JavaScript</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Member 2 Card -->
+          <div class="member-card" data-category="dev">
+            <div class="member-avatar">🎨</div>
+            <div class="member-info">
+              <span class="role-badge dev-badge">Member 2</span>
+              <h3 class="member-name">Taylor Swift</h3>
+              <p class="member-title">UI/UX & Profile Specialist</p>
+              <p class="member-bio">Created the glassmorphism team showcase cards, interactive filtering, and team
+                timeline.</p>
+              <div class="tech-stack">
+                <span class="tech-pill">Glassmorphism</span>
+                <span class="tech-pill">UI Design</span>
+                <span class="tech-pill">CSS Animations</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Member 3 Card -->
+          <div class="member-card" data-category="dev">
+            <div class="member-avatar">🚀</div>
+            <div class="member-info">
+              <span class="role-badge dev-badge">Member 3</span>
+              <h3 class="member-name">Morgan Vance</h3>
+              <p class="member-title">Forms & Validation Dev</p>
+              <p class="member-bio">Built the contact page interface, client-side validation logic, and toast alert
+                feedback system.</p>
+              <div class="tech-stack">
+                <span class="tech-pill">JS Forms</span>
+                <span class="tech-pill">Validation</span>
+                <span class="tech-pill">DOM Logic</span>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+    <!-- === COMMIT 2: END === -->
+
+
+    <!-- =========================================================================
+         COMMIT 3: TEAM VALUES & WORKFLOW TIMELINE
+         -------------------------------------------------------------------------
+         Copy the HTML block below into your `about.html` file in teams/team-<name>/
+         Then commit: git commit -m "feat: add team values and stats section"
+         ========================================================================= -->
+    <!-- === COMMIT 3: START === -->
+    <section class="values-section">
+      <div class="container">
+        <div class="values-box">
+          <h2 class="section-title text-center">Our Core <span class="gradient-text">Values</span></h2>
+          <div class="values-grid">
+            <div class="value-item">
+              <h4>1. Clean Commits</h4>
+              <p>Every commit tells a story. Small, atomic, and descriptive commits keep history readable.</p>
+            </div>
+            <div class="value-item">
+              <h4>2. Isolated Branching</h4>
+              <p>Working on feature branches guarantees zero main branch pollution and painless merges.</p>
+            </div>
+            <div class="value-item">
+              <h4>3. Continuous Pulling</h4>
+              <p>Pull early, pull often! Staying synced with upstream prevents unexpected surprises.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- === COMMIT 3: END === -->
+  </main>
+
+  <!-- Shared Footer -->
+  <footer class="footer">
+    <div class="container">
+      <p>Built with <span class="footer-heart">♥</span> by Team Juniors &copy; 2026. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="../Js/about.js"></script>
+</body>
+
+</html>

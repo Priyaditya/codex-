@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Team Hub - Contact Solution</title>
+  <link rel="stylesheet" href="../Css/shared.css">
+  <link rel="stylesheet" href="../Css/contact.css">
+</head>
+
+<body>
+
+  <!-- Shared Navigation Bar -->
+  <nav class="navbar">
+    <div class="container nav-container">
+      <a href="home.html" class="logo">
+        <span>Team Portfolio</span>
+        <span class="logo-badge">PRO</span>
+      </a>
+      <ul class="nav-links">
+        <li><a href="home.html" class="nav-link">Home</a></li>
+        <li><a href="about.html" class="nav-link">Team Showcase</a></li>
+        <li><a href="contact.html" class="nav-link active">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <main>
+    <!-- =========================================================================
+         COMMIT 1: CONTACT HEADER & INFO GRID
+         -------------------------------------------------------------------------
+         Copy the HTML block below into your `contact.html` file in teams/team-<name>/
+         Then commit: git commit -m "feat: add contact header and info grid"
+         ========================================================================= -->
+    <!-- === COMMIT 1: START === -->
+    <section class="contact-hero">
+      <div class="container text-center">
+        <span class="section-tag">Get In Touch</span>
+        <h1 class="section-title">We'd Love To Hear <span class="gradient-text">From You</span></h1>
+        <p class="section-subtitle" style="margin: 0 auto;">
+          Have feedback on our Git assessment or want to connect with our team? Send us a message below!
+        </p>
+
+        <div class="info-grid">
+          <div class="info-card">
+            <div class="info-icon">📍</div>
+            <h4>Location</h4>
+            <p>Git Workshop Lab, Campus</p>
+          </div>
+          <div class="info-card">
+            <div class="info-icon">📧</div>
+            <h4>Email Us</h4>
+            <p>juniors-team@workshop.edu</p>
+          </div>
+          <div class="info-card">
+            <div class="info-icon">🐙</div>
+            <h4>GitHub Repo</h4>
+            <p>github.com/juniors-git-test</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- === COMMIT 1: END === -->
+
+
+    <!-- =========================================================================
+         COMMIT 2: INTERACTIVE CONTACT FORM
+         -------------------------------------------------------------------------
+         Copy the HTML block below into your `contact.html` file in teams/team-<name>/
+         Then commit: git commit -m "feat: add interactive contact form layout"
+         ========================================================================= -->
+    <!-- === COMMIT 2: START === -->
+    <section class="form-section">
+      <div class="container">
+        <div class="form-card">
+          <form id="contactForm">
+            <div class="form-group">
+              <label for="fullName">Your Full Name</label>
+              <input type="text" id="fullName" class="form-input" placeholder="e.g. John Doe" required>
+            </div>
+
+            <div class="form-group">
+              <label for="email">Email Address</label>
+              <input type="email" id="email" class="form-input" placeholder="e.g. john@example.com" required>
+            </div>
+
+            <div class="form-group">
+              <label for="role">Who are you?</label>
+              <select id="role" class="form-input">
+                <option value="student">Junior Student</option>
+                <option value="evaluator">Workshop Evaluator</option>
+                <option value="other">General Visitor</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label for="message">Message (<span id="charCount">0</span>/200 chars)</label>
+              <textarea id="message" class="form-input" rows="4" maxlength="200"
+                placeholder="Type your message or feedback..." required></textarea>
+            </div>
+
+            <button type="submit" class="btn btn-primary btn-block">Send Message &rarr;</button>
+          </form>
+        </div>
+      </div>
+    </section>
+    <!-- === COMMIT 2: END === -->
+
+
+    <!-- =========================================================================
+         COMMIT 3: TOAST FEEDBACK NOTIFICATION CONTAINER
+         -------------------------------------------------------------------------
+         Copy the HTML block below into your `contact.html` file in teams/team-<name>/
+         Then commit: git commit -m "feat: add feedback toast notification container"
+         ========================================================================= -->
+    <!-- === COMMIT 3: START === -->
+    <div id="toastContainer" class="toast-container"></div>
+    <!-- === COMMIT 3: END === -->
+  </main>
+
+  <!-- Shared Footer -->
+  <footer class="footer">
+    <div class="container">
+      <p>Built with <span class="footer-heart">♥</span> by Team Juniors &copy; 2026. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="../Js/contact.js"></script>
+</body>
+
+</html>
